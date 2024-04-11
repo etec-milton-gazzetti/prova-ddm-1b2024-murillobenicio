@@ -69,8 +69,8 @@ StyleSheet.create({
     color: '#c6d6d6',
   },
   Img: {
-    height: '30%',
-    width: '100%',
+    height: '40%',
+    width: '50%',
     alignSelf: 'center',
     alignItems: 'center',
     justifyContent: 'center',

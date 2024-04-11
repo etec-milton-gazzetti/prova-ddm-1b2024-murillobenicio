@@ -10,26 +10,26 @@ import Perfil from '../components/Murillo.jpg'
 import styles from './style';
 
 export default function Sobre() {
-  SplashScreen.preventAutoHideAsync();
+  //SplashScreen.preventAutoHideAsync();
 
   const [fontsLoaded, fontError] = useFonts({
     'Inter-Bold': require('../assets/fonts/Inter-Bold.otf'),
   });
 
-  const onLayoutRootView = useCallback(async () => {
-    if (fontsLoaded || fontError) {
-      await SplashScreen.hideAsync();
-    }
-  }, [fontsLoaded, fontError]);
+  //const onLayoutRootView = useCallback(async () => {
+    //if (fontsLoaded || fontError) {
+      //await SplashScreen.hideAsync();
+    //}
+  //}, [fontsLoaded, fontError]);
 
-  if (!fontsLoaded && !fontError) {
-    return null;
-  }
+  //if (!fontsLoaded && !fontError) {
+    //return null;
+  //}
   return (
     <View style={styles.container2}>
       <Text style={{fontFamily: 'Inter-Bold',color: '#c6d6d6',textAlign: 'center',marginTop: '30%',marginBottom: '10%',fontSize: 48,}}>Sobre</Text>
       <View>
-        <Image style={styles.Img2} source={Perfil}/>
+        <Image style={styles.Img} source={Perfil}/>
         <Text style={styles.Text3}>
           Meu nome é Murillo Benício do 3º Info, e estou fazendo um Aplicativo
           para mostrar a hístoria da antiga Grécia. Estou usando o Github - Codespace para

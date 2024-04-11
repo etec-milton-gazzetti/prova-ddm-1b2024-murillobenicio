@@ -15,9 +15,9 @@ export default function Inicio({ navigation }) {
 
 // SplashScreen.preventAutoHideAsync();
 
-  // const [fontsLoaded, fontError] = useFonts({
-  //   'Inter-Bold': require('../assets/fonts/Inter-Bold.otf'),
-  // });
+   const [fontsLoaded, fontError] = useFonts({
+     'Inter-Bold': require('../assets/fonts/Inter-Bold.otf'),
+   });
 
   // const onLayoutRootView = useCallback(async () => {
   //   if (fontsLoaded || fontError) {

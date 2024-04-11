@@ -70,9 +70,7 @@ function MyTabs() {
 export default function App() {
   return (
     <NavigationContainer>
-      <HomeStack.Navigator>
-        <HomeStack.Screen name="Home" component={Home} />
-      </HomeStack.Navigator>
+      <MyTabs/>
     </NavigationContainer>
   );
 }

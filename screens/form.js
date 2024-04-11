@@ -7,21 +7,21 @@ import styles from './style';
 
 
  export default function Formula() {
-  SplashScreen.preventAutoHideAsync();
+  //SplashScreen.preventAutoHideAsync();
 
   const [fontsLoaded, fontError] = useFonts({
     'Inter-Bold': require('../assets/fonts/Inter-Bold.otf'),
   });
 
-  const onLayoutRootView = useCallback(async () => {
-    if (fontsLoaded || fontError) {
-      await SplashScreen.hideAsync();
-    }
-  }, [fontsLoaded, fontError]);
+  //const onLayoutRootView = useCallback(async () => {
+    //if (fontsLoaded || fontError) {
+      //await SplashScreen.hideAsync();
+    //}
+  //}, [fontsLoaded, fontError]);
 
-  if (!fontsLoaded && !fontError) {
-    return null;
-  }
+  //if (!fontsLoaded && !fontError) {
+    //return null;
+ // }
   return (
     <ScrollView style={styles.container2}>
       <Text style={{fontFamily: 'Inter-Bold',color: '#c6d6d6',textAlign: 'center',marginTop: '30%',marginBottom: '10%',fontSize: 48,}}>História</Text>
