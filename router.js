@@ -72,5 +72,5 @@ export default function App() {
     <NavigationContainer>
       <MyTabs/>
     </NavigationContainer>
-  );
+  )
 }
